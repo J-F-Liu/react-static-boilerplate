@@ -1,0 +1,178 @@
+###
+GET https://api.leancloud.cn/1.1/date
+X-LC-Id: QVnd1gLGUmkgA5cYS4MLGR2r-gzGzoHsz
+X-LC-Key: an14joH9ThUtOhi4pq5KYkdu
+
+###
+GET https://api.leancloud.cn/1.1/classes/leads
+X-LC-Id: QVnd1gLGUmkgA5cYS4MLGR2r-gzGzoHsz
+X-LC-Key: an14joH9ThUtOhi4pq5KYkdu
+
+###
+POST https://api.leancloud.cn/1.1/classes/leads
+X-LC-Id: QVnd1gLGUmkgA5cYS4MLGR2r-gzGzoHsz
+X-LC-Key: an14joH9ThUtOhi4pq5KYkdu
+Content-Type: application/json
+
+{
+  "name": "李大江",
+  "phone": "13123456789",
+  "gender": 1,
+  "from": "",
+  "creator": "",
+  "owner": "",
+  "status": 0,
+  "region": 0,
+  "grade": 1,
+  "school": "",
+  "address": "",
+  "comment": ""
+}
+
+###
+POST https://api.leancloud.cn/1.1/classes/follow
+X-LC-Id: QVnd1gLGUmkgA5cYS4MLGR2r-gzGzoHsz
+X-LC-Key: an14joH9ThUtOhi4pq5KYkdu
+Content-Type: application/json
+
+{
+  "lead": "5cf0ef0a7b968a00769c2765",
+  "follower": "5cee413343e78c0067308e16",
+  "content": "电话联系上门体验",
+  "possibility": "小",
+  "plan": 1,
+  "planDate": {
+    "__type": "Date",
+    "iso": "2019-06-21T18:02:52.249Z"
+  },
+  "nextDate": {
+    "__type": "Date",
+    "iso": "2020-01-31T18:02:52.249Z"
+  }
+}
+###
+POST https://api.leancloud.cn/1.1/classes/fromOption
+X-LC-Id: QVnd1gLGUmkgA5cYS4MLGR2r-gzGzoHsz
+X-LC-Key: an14joH9ThUtOhi4pq5KYkdu
+Content-Type: application/json
+
+{
+  "label": "总部-学科",
+  "value": 3,
+}
+###
+https://api.leancloud.cn/1.1/users?keys=name
+X-LC-Id: QVnd1gLGUmkgA5cYS4MLGR2r-gzGzoHsz
+X-LC-Key: an14joH9ThUtOhi4pq5KYkdu
+X-LC-Session: khimydxh3sx6zctp86a3vhtky
+###
+POST https://api.leancloud.cn/1.1/users
+X-LC-Id: QVnd1gLGUmkgA5cYS4MLGR2r-gzGzoHsz
+X-LC-Key: an14joH9ThUtOhi4pq5KYkdu
+Content-Type: application/json
+
+{"username":"18888888888","password":"P@ssw0rd","name":"超级管理员", "mobilePhoneNumber":"18888888888","enabled":true}
+###
+POST https://api.leancloud.cn/1.1/roles
+X-LC-Id: QVnd1gLGUmkgA5cYS4MLGR2r-gzGzoHsz
+X-LC-Key: FvpMjBWFngskuupkOYDawznx,master
+Content-Type: application/json
+
+{
+  "name": "SuperAdmin",
+  "leadPerms": [
+    "create",
+    "modify",
+    "viewDetail",
+    "follow",
+    "assign"
+  ],
+  "rank": 0,
+  "userCount": 1,
+  "display": "超级管理员",
+  "range": 1,
+  "userPerms": [
+    "create",
+    "modify",
+    "toggle"
+  ],
+  "ACL":{"*":{"read":true,"write":true}}
+}
+
+###
+PUT https://api.leancloud.cn/1.1/users/5cf8bb87a673f500689a4542
+X-LC-Id: QVnd1gLGUmkgA5cYS4MLGR2r-gzGzoHsz
+X-LC-Key: khimydxh3sx6zctp86a3vhtky
+Content-Type: application/json
+
+{"password": "P@ssw0rd"}
+###
+PUT https://api.leancloud.cn/1.1/roles/5b1d1340a22b9d003a382fb2
+X-LC-Id: QVnd1gLGUmkgA5cYS4MLGR2r-gzGzoHsz
+X-LC-Key: FvpMjBWFngskuupkOYDawznx,master
+Content-Type: application/json
+
+{
+  "users": {
+    "__op": "AddRelation",
+    "objects": [
+      {
+        "__type": "Pointer",
+        "className": "_User",
+        "objectId": "5af4477d0b616057d1bbf93a"
+      }
+    ]
+  }
+}
+
+###
+GET https://api.leancloud.cn/1.1/users/5cee413343e78c0067308e16
+X-LC-Id: QVnd1gLGUmkgA5cYS4MLGR2r-gzGzoHsz
+X-LC-Key: FvpMjBWFngskuupkOYDawznx,master
+
+###
+GET https://api.leancloud.cn/1.1/roles/5cee413343e78c0067308e16
+X-LC-Id: QVnd1gLGUmkgA5cYS4MLGR2r-gzGzoHsz
+X-LC-Key: FvpMjBWFngskuupkOYDawznx,master
+
+###
+GET https://api.leancloud.cn/1.1/schemas
+X-LC-Id: QVnd1gLGUmkgA5cYS4MLGR2r-gzGzoHsz
+X-LC-Key: FvpMjBWFngskuupkOYDawznx,master
+
+###
+PUT https://api.leancloud.cn/1.1/roles/5cff6f6dc8959c0069aeaf36?where=%7B%22userCount%22%3A%7B%22%24gt%22%3A0%7D%7D
+X-LC-Id: QVnd1gLGUmkgA5cYS4MLGR2r-gzGzoHsz
+X-LC-Key: FvpMjBWFngskuupkOYDawznx,master
+Content-Type: application/json
+
+{"userCount":{"__op":"Increment","amount":-1}}
+
+###
+PUT https://api.leancloud.cn/1.1/classes/leads/5cff258730863b00680d4e75
+X-LC-Id: QVnd1gLGUmkgA5cYS4MLGR2r-gzGzoHsz
+X-LC-Key: FvpMjBWFngskuupkOYDawznx,master
+Content-Type: application/json
+
+{"ACL":{"*":{"read":true,"write":true}}}
+
+###
+PUT https://api.leancloud.cn/1.1/users/5d073b02ba39c8328b21df41
+X-LC-Id: QVnd1gLGUmkgA5cYS4MLGR2r-gzGzoHsz
+X-LC-Key: FvpMjBWFngskuupkOYDawznx,master
+X-LC-Session: khimydxh3sx6zctp86a3vhtky
+Content-Type: application/json
+
+{"name":"地方"}
+
+###
+PUT http://lncld.dev2.zhimo.co/users/5d073b02ba39c8328b21df41
+Content-Type: application/json
+
+{"name":"地方"}
+
+###
+DELETE https://api.leancloud.cn/1.1/classes/orders/5d1c6825c05a8000739cb276?where=%7B%22orderId%22%3A20064%7D
+X-LC-Id: QVnd1gLGUmkgA5cYS4MLGR2r-gzGzoHsz
+X-LC-Key: FvpMjBWFngskuupkOYDawznx,master
+Content-Type: application/json
