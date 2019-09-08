@@ -8,8 +8,8 @@ import { Row } from "../components/Flexbox";
 import TextInput from "../components/TextInput";
 import CountdownButton from "../components/CountdownButton";
 import ValidationMessages from "../widgets/ValidationMessages";
-import LeanCloud from "../utils/LeanCloud";
-import { randomString } from "../utils/lib";
+// import LeanCloud from "../utils/LeanCloud";
+// import { randomString } from "../utils/lib";
 import useFormData from "../hooks/useFormData";
 import { Container, LoginForm } from "./login";
 

@@ -6,7 +6,7 @@ import { Row, Col } from "../components/Flexbox";
 import Session from "../utils/Session";
 import { useAccount, setAccount } from "../SharedState";
 import ChangePassword from "./ChangePassword";
-import LeanCloud from "../utils/LeanCloud";
+// import LeanCloud from "../utils/LeanCloud";
 
 const Bar = styled(Row)`
   padding: 0 10px;

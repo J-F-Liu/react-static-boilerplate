@@ -7,7 +7,7 @@ import { navigate } from "@reach/router";
 import TextInput from "../components/TextInput";
 import ErrorMessage from "../components/ErrorMessage";
 import useFormData from "../hooks/useFormData";
-import LeanCloud from "../utils/LeanCloud";
+// import LeanCloud from "../utils/LeanCloud";
 import Session from "../utils/Session";
 
 const Table = styled.table`
