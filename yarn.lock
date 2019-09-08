@@ -756,7 +756,7 @@
     pirates "^4.0.0"
     source-map-support "^0.5.9"
 
-"@babel/runtime@^7.2.0", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.3", "@babel/runtime@^7.4.4":
+"@babel/runtime@^7.4.2", "@babel/runtime@^7.4.3":
   version "7.4.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.4.4.tgz#dc2e34982eb236803aa27a07fea6857af1b9171d"
   dependencies:
@@ -838,12 +838,6 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@tanem/svg-injector@^8.0.4":
-  version "8.0.4"
-  resolved "https://registry.yarnpkg.com/@tanem/svg-injector/-/svg-injector-8.0.4.tgz#0d08b53208f6d72df2b1c87cf773e246f57c5ea7"
-  dependencies:
-    "@babel/runtime" "^7.4.4"
-
 "@types/events@*":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
@@ -884,10 +878,6 @@
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
-
-"@types/zen-observable@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.0.tgz#8b63ab7f1aa5321248aad5ac890a485656dcea4d"
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
@@ -1199,77 +1189,6 @@ anymatch@^2.0.0:
   dependencies:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
-
-apollo-cache-inmemory@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/apollo-cache-inmemory/-/apollo-cache-inmemory-1.5.1.tgz#265d1ee67b0bf0aca9c37629d410bfae44e62953"
-  dependencies:
-    apollo-cache "^1.2.1"
-    apollo-utilities "^1.2.1"
-    optimism "^0.6.9"
-    ts-invariant "^0.2.1"
-    tslib "^1.9.3"
-
-apollo-cache@1.2.1, apollo-cache@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/apollo-cache/-/apollo-cache-1.2.1.tgz#aae71eb4a11f1f7322adc343f84b1a39b0693644"
-  dependencies:
-    apollo-utilities "^1.2.1"
-    tslib "^1.9.3"
-
-apollo-client@^2.5.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-2.5.1.tgz#36126ed1d32edd79c3713c6684546a3bea80e6d1"
-  dependencies:
-    "@types/zen-observable" "^0.8.0"
-    apollo-cache "1.2.1"
-    apollo-link "^1.0.0"
-    apollo-link-dedup "^1.0.0"
-    apollo-utilities "1.2.1"
-    symbol-observable "^1.0.2"
-    ts-invariant "^0.2.1"
-    tslib "^1.9.3"
-    zen-observable "^0.8.0"
-
-apollo-link-dedup@^1.0.0:
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/apollo-link-dedup/-/apollo-link-dedup-1.0.18.tgz#635cb5659b082e7f270f7649c4b0f71021f7bb4b"
-  dependencies:
-    apollo-link "^1.2.11"
-    tslib "^1.9.3"
-
-apollo-link-http-common@^0.2.13:
-  version "0.2.13"
-  resolved "https://registry.yarnpkg.com/apollo-link-http-common/-/apollo-link-http-common-0.2.13.tgz#c688f6baaffdc7b269b2db7ae89dae7c58b5b350"
-  dependencies:
-    apollo-link "^1.2.11"
-    ts-invariant "^0.3.2"
-    tslib "^1.9.3"
-
-apollo-link-http@^1.5.14:
-  version "1.5.14"
-  resolved "https://registry.yarnpkg.com/apollo-link-http/-/apollo-link-http-1.5.14.tgz#ed6292248d1819ccd16523e346d35203a1b31109"
-  dependencies:
-    apollo-link "^1.2.11"
-    apollo-link-http-common "^0.2.13"
-    tslib "^1.9.3"
-
-apollo-link@^1.0.0, apollo-link@^1.2.11:
-  version "1.2.11"
-  resolved "https://registry.yarnpkg.com/apollo-link/-/apollo-link-1.2.11.tgz#493293b747ad3237114ccd22e9f559e5e24a194d"
-  dependencies:
-    apollo-utilities "^1.2.1"
-    ts-invariant "^0.3.2"
-    tslib "^1.9.3"
-    zen-observable-ts "^0.8.18"
-
-apollo-utilities@1.2.1, apollo-utilities@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/apollo-utilities/-/apollo-utilities-1.2.1.tgz#1c3a1ebf5607d7c8efe7636daaf58e7463b41b3c"
-  dependencies:
-    fast-json-stable-stringify "^2.0.0"
-    ts-invariant "^0.2.1"
-    tslib "^1.9.3"
 
 aproba@^1.0.3, aproba@^1.1.1:
   version "1.2.0"
@@ -2727,10 +2646,6 @@ deep-is@~0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
 
-deep-object-diff@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/deep-object-diff/-/deep-object-diff-1.1.0.tgz#d6fabf476c2ed1751fc94d5ca693d2ed8c18bc5a"
-
 default-gateway@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/default-gateway/-/default-gateway-4.2.0.tgz#167104c7500c2115f6dd69b0a536bb8ed720552b"
@@ -3091,10 +3006,6 @@ es-to-primitive@^1.2.0:
     is-callable "^1.1.4"
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
-
-es6-object-assign@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/es6-object-assign/-/es6-object-assign-1.1.0.tgz#c2c3582656247c39ea107cb1e6652b6f9f24523c"
 
 escape-html@~1.0.3:
   version "1.0.3"
@@ -3537,10 +3448,6 @@ file-loader@3.0.1:
     loader-utils "^1.0.2"
     schema-utils "^1.0.0"
 
-file-saver@^1.3.3:
-  version "1.3.8"
-  resolved "https://registry.yarnpkg.com/file-saver/-/file-saver-1.3.8.tgz#e68a30c7cb044e2fb362b428469feb291c2e09d8"
-
 file-type@^3.8.0:
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/file-type/-/file-type-3.9.0.tgz#257a078384d1db8087bc449d107d52a52672b9e9"
@@ -3844,16 +3751,6 @@ graceful-fs@^4.2.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
 
-graphql-tag@^2.10.1:
-  version "2.10.1"
-  resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.10.1.tgz#10aa41f1cd8fae5373eaf11f1f67260a3cad5e02"
-
-graphql@^14.2.1:
-  version "14.3.0"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.3.0.tgz#34dd36faa489ff642bcd25df6c3b4f988a1a2f3e"
-  dependencies:
-    iterall "^1.2.2"
-
 gud@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/gud/-/gud-1.0.0.tgz#a489581b17e6a70beca9abe3ae57de7a499852c0"
@@ -4146,14 +4043,6 @@ ignore-walk@^3.0.1:
 ignore@^4.0.6:
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
-
-immediate@~3.0.5:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/immediate/-/immediate-3.0.6.tgz#9db1dbd0faf8de6fbe0f5dd5e56bb606280de69b"
-
-immutable-tuple@^0.4.9:
-  version "0.4.10"
-  resolved "https://registry.yarnpkg.com/immutable-tuple/-/immutable-tuple-0.4.10.tgz#e0b1625384f514084a7a84b749a3bb26e9179929"
 
 immutable@^3.7.4:
   version "3.8.2"
@@ -4546,10 +4435,6 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
-iterall@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.2.2.tgz#92d70deb8028e0c39ff3164fdbf4d8b088130cd7"
-
 js-levenshtein@^1.1.3:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/js-levenshtein/-/js-levenshtein-1.1.6.tgz#c6cee58eb3550372df8deb85fad5ce66ce01d59d"
@@ -4602,14 +4487,6 @@ json2mq@^0.2.0:
   dependencies:
     string-convert "^0.2.0"
 
-json2xlsx-export@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/json2xlsx-export/-/json2xlsx-export-1.2.2.tgz#bc30993712a1490a7184957210add8b54345e9e0"
-  dependencies:
-    file-saver "^1.3.3"
-    jszip "^3.1.3"
-    lodash.escape "^4.0.1"
-
 json3@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/json3/-/json3-3.3.2.tgz#3c0434743df93e2f5c42aee7b19bcb483575f4e1"
@@ -4641,15 +4518,6 @@ jsx-ast-utils@^2.0.1, jsx-ast-utils@^2.1.0:
   resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-2.1.0.tgz#0ee4e2c971fb9601c67b5641b71be80faecf0b36"
   dependencies:
     array-includes "^3.0.3"
-
-jszip@^3.1.3:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/jszip/-/jszip-3.2.2.tgz#b143816df7e106a9597a94c77493385adca5bd1d"
-  dependencies:
-    lie "~3.3.0"
-    pako "~1.0.2"
-    readable-stream "~2.3.6"
-    set-immediate-shim "~1.0.1"
 
 killable@^1.0.1:
   version "1.0.1"
@@ -4694,12 +4562,6 @@ levn@^0.3.0, levn@~0.3.0:
   dependencies:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
-
-lie@~3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/lie/-/lie-3.3.0.tgz#dcf82dee545f46074daf200c7c1c5a08e0f40f6a"
-  dependencies:
-    immediate "~3.0.5"
 
 load-json-file@^2.0.0:
   version "2.0.0"
@@ -4753,10 +4615,6 @@ lodash.debounce@^4.0.0, lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
 
-lodash.escape@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/lodash.escape/-/lodash.escape-4.0.1.tgz#c9044690c21e04294beaa517712fded1fa88de98"
-
 lodash.isarguments@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
@@ -4781,7 +4639,7 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
 
-lodash.throttle@^4.0.0, lodash.throttle@^4.1.1:
+lodash.throttle@^4.0.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
 
@@ -5435,12 +5293,6 @@ opn@^5.5.0:
   dependencies:
     is-wsl "^1.1.0"
 
-optimism@^0.6.9:
-  version "0.6.9"
-  resolved "https://registry.yarnpkg.com/optimism/-/optimism-0.6.9.tgz#19258ff8b3be0cea29ac35f06bff818e026e30bb"
-  dependencies:
-    immutable-tuple "^0.4.9"
-
 optimize-css-assets-webpack-plugin@^5.0.0:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/optimize-css-assets-webpack-plugin/-/optimize-css-assets-webpack-plugin-5.0.1.tgz#9eb500711d35165b45e7fd60ba2df40cb3eb9159"
@@ -5552,7 +5404,7 @@ pako@~0.2.0:
   version "0.2.9"
   resolved "https://registry.yarnpkg.com/pako/-/pako-0.2.9.tgz#f3f7522f4ef782348da8161bad9ecfd51bf83a75"
 
-pako@~1.0.2, pako@~1.0.5:
+pako@~1.0.5:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.10.tgz#4328badb5086a426aa90f541977d4955da5c9732"
 
@@ -6089,10 +5941,6 @@ progress@^2.0.0, progress@^2.0.1:
 promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
-
-promise-polyfill@^6.0.2:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-6.1.0.tgz#dfa96943ea9c121fca4de9b5868cb39d3472e057"
 
 promise@^7.1.1:
   version "7.3.1"
@@ -6698,12 +6546,6 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-context-tabs@^2.0.0-alpha4:
-  version "2.0.0-alpha4"
-  resolved "https://registry.yarnpkg.com/react-context-tabs/-/react-context-tabs-2.0.0-alpha4.tgz#adbd6ee90e9fa5f12dabb6b6c5d7d64caa3a4201"
-  dependencies:
-    classnames "^2.2.6"
-
 react-dom@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
@@ -6780,12 +6622,6 @@ react-side-effect@^1.1.0:
   dependencies:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
-
-react-simple-tooltip@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/react-simple-tooltip/-/react-simple-tooltip-2.5.0.tgz#299d41a5e23349832e28eb01597e8b974fb73ba6"
-  dependencies:
-    styled-components "^4.1.3"
 
 react-slick@~0.24.0:
   version "0.24.0"
@@ -6898,14 +6734,6 @@ react-static@^7.1.0:
     webpack-flush-chunks "^2.0.1"
     webpack-node-externals "^1.7.2"
 
-react-svg@^10.0.2:
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/react-svg/-/react-svg-10.0.2.tgz#76e829146ba19576dc488020e16d97e4052428a3"
-  dependencies:
-    "@babel/runtime" "^7.4.4"
-    "@tanem/svg-injector" "^8.0.4"
-    prop-types "^15.7.2"
-
 react-universal-component@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/react-universal-component/-/react-universal-component-4.0.0.tgz#51e74198b98092dff6faf25315091070547ed129"
@@ -6969,13 +6797,6 @@ readdirp@^2.2.1:
 reboot.css@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/reboot.css/-/reboot.css-1.0.4.tgz#a5940caf7bd09fb417cb7145e1e01a74fa13d8fe"
-
-redux@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.1.tgz#436cae6cc40fbe4727689d7c8fae44808f1bfef5"
-  dependencies:
-    loose-envify "^1.4.0"
-    symbol-observable "^1.2.0"
 
 regenerate-unicode-properties@^8.0.2:
   version "8.1.0"
@@ -7325,10 +7146,6 @@ serve@11.0.0, serve@^11.0.0:
 set-blocking@^2.0.0, set-blocking@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/set-blocking/-/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
-
-set-immediate-shim@~1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/set-immediate-shim/-/set-immediate-shim-1.0.1.tgz#4b2b1b27eb808a9f8dcc481a58e5e56f599f3f61"
 
 set-value@^0.4.3:
   version "0.4.3"
@@ -7753,7 +7570,7 @@ style-loader@0.23.1:
     loader-utils "^1.1.0"
     schema-utils "^1.0.0"
 
-styled-components@^4.1.3, styled-components@^4.2.0:
+styled-components@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-4.2.0.tgz#811fbbec4d64c7189f6c7482b9eb6fefa7fefef7"
   dependencies:
@@ -7832,22 +7649,11 @@ svgo@^1.0.0:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
-sweetalert@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/sweetalert/-/sweetalert-2.1.2.tgz#010baaa80d0dbdc86f96bfcaa96b490728594b79"
-  dependencies:
-    es6-object-assign "^1.1.0"
-    promise-polyfill "^6.0.2"
-
 swimmer@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/swimmer/-/swimmer-1.4.0.tgz#cf2ffc13c6f0af483fbc91eb35ffd318556407fd"
   dependencies:
     babel-runtime "^6.26.0"
-
-symbol-observable@^1.0.2, symbol-observable@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
 
 table@^5.2.3:
   version "5.3.3"
@@ -8040,19 +7846,7 @@ tryer@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/tryer/-/tryer-1.0.1.tgz#f2c85406800b9b0f74c9f7465b81eaad241252f8"
 
-ts-invariant@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/ts-invariant/-/ts-invariant-0.2.1.tgz#3d587f9d6e3bded97bf9ec17951dd9814d5a9d3f"
-  dependencies:
-    tslib "^1.9.3"
-
-ts-invariant@^0.3.2:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/ts-invariant/-/ts-invariant-0.3.3.tgz#b5742b1885ecf9e29c31a750307480f045ec0b16"
-  dependencies:
-    tslib "^1.9.3"
-
-tslib@^1.9.0, tslib@^1.9.3:
+tslib@^1.9.0:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
 
@@ -8288,16 +8082,6 @@ vary@^1, vary@~1.1.2:
 vendors@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/vendors/-/vendors-1.0.3.tgz#a6467781abd366217c050f8202e7e50cc9eef8c0"
-
-video-react@^0.13.6:
-  version "0.13.7"
-  resolved "https://registry.yarnpkg.com/video-react/-/video-react-0.13.7.tgz#3eda5d798a793629d9af9459d904924c6e9a3f86"
-  dependencies:
-    "@babel/runtime" "^7.2.0"
-    classnames "^2.2.6"
-    lodash.throttle "^4.1.1"
-    prop-types "^15.6.2"
-    redux "^4.0.1"
 
 vm-browserify@0.0.4:
   version "0.0.4"
@@ -8587,14 +8371,3 @@ yauzl@^2.4.2:
 yeast@0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
-
-zen-observable-ts@^0.8.18:
-  version "0.8.18"
-  resolved "https://registry.yarnpkg.com/zen-observable-ts/-/zen-observable-ts-0.8.18.tgz#ade44b1060cc4a800627856ec10b9c67f5f639c8"
-  dependencies:
-    tslib "^1.9.3"
-    zen-observable "^0.8.0"
-
-zen-observable@^0.8.0:
-  version "0.8.14"
-  resolved "https://registry.yarnpkg.com/zen-observable/-/zen-observable-0.8.14.tgz#d33058359d335bc0db1f0af66158b32872af3bf7"
