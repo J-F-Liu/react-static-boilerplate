@@ -2,5 +2,4 @@ artifacts/
 dist/
 node_modules/
 tmp/
-yarn-error.log
 .metals
